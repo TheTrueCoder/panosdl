@@ -1,0 +1,20 @@
+[project]
+name = "mapsdl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Nathan", email = "thetruecoderman@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.4.6",
+    "streetlevel>=0.12.11",
+]
+
+[project.scripts]
+mapsdl = "mapsdl:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
